@@ -1,0 +1,339 @@
+/* DashboardKPI.css */
+.dashboard-kpi {
+    padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+.cardSec{
+        width: 47%;
+}
+.dashboard-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin: 7px 0 24px 0;
+        margin-top: 36px;
+    text-align: left;
+}
+
+.kpi-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Layout Rows */
+.top-row {
+    display: flex
+;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+}
+.bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: -49px;
+}
+
+/* KPI Cards Container */
+.kpi-cards {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 16px;
+    height: 50%;
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+       margin-bottom: 17px;
+}
+
+/* KPI Card Styling */
+.kpi-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.2s 
+ease;
+    margin-bottom: 50px;
+    height: 48%;
+}
+
+.kpi-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.customers-card {
+    background: linear-gradient(135deg, #E3F5FF 0%, #E3F5FF 100%);
+    border-color: #E3F5FF;
+}
+
+.growth-card {
+    background: linear-gradient(135deg, #E5ECF6 0%, #E5ECF6 100%);
+    border-color: #E5ECF6;
+}
+.orders-card{
+background: linear-gradient(135deg, #F7F9FB 0%, #F7F9FB 100%);
+    border-color: #F7F9FB;
+}
+.revenue-card{
+background: linear-gradient(135deg, #F7F9FB 0%, #F7F9FB 100%);
+    border-color: #F7F9FB;
+}
+.kpi-header {
+    margin-bottom: 12px;
+    text-align: left;
+    color: black !important;
+}
+
+.kpi-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
+
+.kpi-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.kpi-value {
+    font-size: 23px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1;
+}
+
+.kpi-change {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.kpi-change.positive {
+    /* color: #059669; */
+}
+
+.kpi-change.negative {
+    /* color: #dc2626; */
+}
+
+.change-text {
+    line-height: 1;
+}
+
+.trend-icon {
+    width: 14px;
+    height: 14px;
+}
+
+/* Chart Section */
+.chart-section {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    /* padding: 20px; */
+    /* margin-left: 24px; */
+    padding: 20px 0px 20px 4px;
+    width: 51%;
+}
+
+.chart-header {
+    margin-bottom: 20px;
+    margin-left: 12px;
+}
+
+.chart-title {
+       font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-left: 12px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.chart-container {
+    display: flex;
+    gap: 16px;
+    height: 200px;
+        height: 167px;
+}
+
+.chart-y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 40px;
+    padding-right: 8px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.chart-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bars-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 0 12px;
+}
+
+.bar-group {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.bar {
+    width: 32px;
+    min-height: 4px;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s ease;
+}
+
+.single-bar {
+    background: linear-gradient(180deg, #A8C5DA 0%, #A8C5DA 100%);
+}
+
+.bar:hover {
+    opacity: 0.8;
+}
+.bar-wrapper {
+  position: relative;
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-top {
+  height: 20%;
+  background-color: #B8D4E3; /* Light blue/faded color */
+  border-radius: 4px 4px 0 0;
+}
+
+.bar-bottom {
+  height: 80%;
+  background-color: #7FB3D3; /* Main bar color */
+  border-radius: 0 0 4px 4px;
+}
+
+.chart-x-axis {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 12px 0 12px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+
+.x-label, .y-label {
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .top-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .bottom-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .kpi-cards {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboard-kpi {
+        padding: 16px;
+    }
+    
+    .kpi-cards {
+        flex-direction: column;
+    }
+    
+    .kpi-value {
+        font-size: 28px;
+    }
+    
+    .chart-container {
+        height: 160px;
+    }
+}
+
+/* Improved Responsive for DashboardKPI.css */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+    .top-row {
+        display: block; /* stack vertically */
+        gap: 24px;
+    }
+    .bottom-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .kpi-cards {
+        display: flex !important; /* override grid fallback */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+    .cardSec {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .chart-section {
+        width: 100% !important;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile and below */
+@media (max-width: 640px) {
+    .dashboard-kpi {
+        padding: 12px 16px !important;
+    }
+    .kpi-cards {
+        display: flex !important;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .kpi-value {
+        font-size: 22px !important;
+    }
+    .chart-container {
+        height: 140px !important;
+        flex-direction: column;
+    }
+    .chart-header {
+        margin-left: 8px !important;
+    }
+    .chart-title {
+        font-size: 14px !important;
+        margin-left: 8px !important;
+    }
+    .bottom-row {
+        grid-template-columns: 1fr !important;
+        margin-bottom: 0 !important;
+        gap: 16px;
+    }
+}
